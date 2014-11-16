@@ -16,7 +16,6 @@ class HomeController extends Controller
     public function homeAction($number,$multiplier)
     {
         $product = $number* $multiplier;
-        $contact = $this->renderView('FillinHomeBundle:Default:home.html.twig', array('number'=>$number,'multiplier'=>$multiplier,'product'=>$product));
-        return new Response($contact);
+       return $this->render('FillinHomeBundle:Default:home.html.twig', array('number'=>$number,'multiplier'=>$multiplier,'product'=>$product));
     }
 }
