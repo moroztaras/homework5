@@ -2,6 +2,7 @@ defaults:
     path:     /hello/{name}
     defaults: { _controller: FillinHomeBundle:Default:index }
 
-_homework5:
-      path:   /homework5/{number}/{multiplier}
-      defaults: { _controller: FillinHomeBundle:Home:home}
+homework5:
+       prefix: /homework5
+       type:     annotation
+       resource: "@FillinHomeBundle/Controller/HomeController.php"
