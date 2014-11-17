@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 class HomeController extends Controller
 {
     /**
-     * @Route("/homework5/{name}/{multiplier}")
+     * @Route("/{number}/{multiplier}")
      * @Template()
      */
     public function homeAction($number,$multiplier)
